@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CrokeParkDatabase" Class="AzureSQLDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=crokepark.database.windows.net;Initial Catalog=CrokeParkDatabase;Persist Security Info=True;User ID=gaasa" SettingsObjectName="GAA.IoT.Azure.Properties.Settings" SettingsPropertyName="CrokeParkDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SoundDataRollingAverage" Member="SoundDataRollingAverageModels">
+    <Type Name="SoundDataRollingAverageModel">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AVGLEQ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MAXLAMAX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AVGPressureSquared" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DeviceId" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SoundData" Member="SoundDatas">
+    <Type Name="SoundData">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DeviceId" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Stand" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LAEQ" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LAMax" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LA90" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LA10" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UniversalTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

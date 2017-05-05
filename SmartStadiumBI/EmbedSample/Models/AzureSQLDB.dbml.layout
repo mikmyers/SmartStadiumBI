@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AzureSQLDB">
+  <DataContextMoniker Name="/AzureSQLDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="da139345-25ae-44a4-9bbe-26d7f8f28c13" absoluteBounds="4.25, 1.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AzureSQLDBDataContext/SoundDataRollingAverageModel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4cd8fb1e-8072-4154-b007-45f9ed37764e" absoluteBounds="4.265, 2.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a2c28e1-626a-4f1a-af30-f8264084f970" absoluteBounds="1.25, 2.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/AzureSQLDBDataContext/SoundData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1e5f438-b9c3-4b0d-9719-5181bdbffcc9" absoluteBounds="1.2650000000000001, 2.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
